@@ -18,7 +18,6 @@ class Session:
 
     def init(self):
         #self.register(0x00, self.echo)
-        self.register(0x01, self.collect_licode_info)
         self.register(0x02, self.heartbeat)
         log.basicConfig(filename=config["log"]["file"], level=config["log"]["level"], format=config["log"]["format"])
 
